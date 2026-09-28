@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dohd0kdg4t8pw"]
+
+[ext_resource type="Script" uid="uid://bu6gsuneykydh" path="res://Scenes/Game Scenes/UI Scenes/main_menu.gd" id="1_d5wsu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_biyew"]
+font_size = 42
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="MainMenu" type="Control" unique_id=1743144030]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d5wsu")
+
+[node name="TitleLabel" type="Label" parent="." unique_id=894775589]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 49.0
+offset_right = 793.0
+offset_bottom = 107.0
+text = "Awesome Adventure"
+label_settings = SubResource("LabelSettings_biyew")
+
+[node name="StartGameButton" type="Button" parent="." unique_id=555335236]
+layout_mode = 0
+offset_left = 459.0
+offset_top = 395.0
+offset_right = 687.0
+offset_bottom = 469.0
+text = "START GAME"
+
+[node name="QuitGameButton" type="Button" parent="." unique_id=1171092982]
+layout_mode = 0
+offset_left = 459.0
+offset_top = 506.0
+offset_right = 687.0
+offset_bottom = 580.0
+text = "QUIT GAME"
+
+[connection signal="pressed" from="StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="QuitGameButton" to="." method="_on_quit_game_button_pressed"]
