@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c5lomjbx54f0j" path="res://Assets/Game Art/2DPlatformerTilemap.png" id="1_lgcjg"]
 [ext_resource type="Texture2D" uid="uid://dw10eobcff5x7" path="res://Assets/Game Art/background_fade_trees.svg" id="1_t50dg"]
 [ext_resource type="Texture2D" uid="uid://dpak1cwvqfrqs" path="res://Assets/Game Art/background_color_trees.svg" id="2_uwpwp"]
+[ext_resource type="PackedScene" uid="uid://c4ow03djk3b2t" path="res://Scenes/Game Scenes/UI Scenes/player_hud.tscn" id="3_7s3nb"]
 [ext_resource type="PackedScene" uid="uid://dlg0gro1of0ht" path="res://Scenes/Game Scenes/Premade Scenes/2d_platformer_coin.tscn" id="4_rb1w1"]
 [ext_resource type="PackedScene" uid="uid://c66yv0uum4sw5" path="res://Scenes/Game Scenes/UI Scenes/pause_menu.tscn" id="6_cd0lt"]
 [ext_resource type="PackedScene" uid="uid://diervuosq2jhf" path="res://Scenes/Game Scenes/Premade Scenes/2d_platformer_sign.tscn" id="7_7s3nb"]
@@ -140,6 +141,8 @@ texture = ExtResource("2_uwpwp")
 position = Vector2(0, 953)
 scale = Vector2(1024, 1024)
 texture = SubResource("GradientTexture1D_qc1kn")
+
+[node name="PlayerHUD" parent="." unique_id=1720921287 instance=ExtResource("3_7s3nb")]
 
 [node name="Coins" type="Node2D" parent="." unique_id=535448822]
 

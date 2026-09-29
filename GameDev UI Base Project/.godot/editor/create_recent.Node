@@ -1,9 +1,11 @@
-RichTextLabel
-Label
-VBoxContainer
 MarginContainer
+PanelContainer
+Label
+TextureRect
+HBoxContainer
+CanvasLayer
+RichTextLabel
+VBoxContainer
 Panel
 Button
 Control
-CanvasLayer
-TextureRect
