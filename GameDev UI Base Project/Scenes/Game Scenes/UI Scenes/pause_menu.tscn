@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://c66yv0uum4sw5"]
+
+[ext_resource type="Script" uid="uid://c5r0ma18jpedc" path="res://Scenes/Game Scenes/UI Scenes/pause_menu.gd" id="1_hmyja"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hmyja"]
+font_size = 36
+font_color = Color(1, 0.15595528, 0.59499615, 1)
+outline_size = 4
+outline_color = Color(0, 0.75519234, 0.7084885, 1)
+shadow_size = 10
+shadow_color = Color(0.71, 0.31950003, 0, 0.69411767)
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1425799815]
+process_mode = 3
+script = ExtResource("1_hmyja")
+
+[node name="Control" type="Control" parent="." unique_id=1324489246]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Control" unique_id=1180160917]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -153.0
+offset_top = -50.0
+offset_right = 153.0
+offset_bottom = 185.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/Panel" unique_id=2029618832]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel/MarginContainer" unique_id=2087620191]
+layout_mode = 2
+
+[node name="VBoxTitle" type="VBoxContainer" parent="Control/Panel/MarginContainer/VBoxContainer" unique_id=1582902385]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="PauseLabel" type="Label" parent="Control/Panel/MarginContainer/VBoxContainer/VBoxTitle" unique_id=1328949794]
+layout_mode = 2
+size_flags_vertical = 3
+text = "GAME PAUSED"
+label_settings = SubResource("LabelSettings_hmyja")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxButtons" type="VBoxContainer" parent="Control/Panel/MarginContainer/VBoxContainer" unique_id=1294462585]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="ResumeButton" type="Button" parent="Control/Panel/MarginContainer/VBoxContainer/VBoxButtons" unique_id=1482459506]
+layout_mode = 2
+size_flags_vertical = 3
+text = "RESUME GAME"
+
+[node name="QuitButton" type="Button" parent="Control/Panel/MarginContainer/VBoxContainer/VBoxButtons" unique_id=330756891]
+layout_mode = 2
+size_flags_vertical = 3
+text = "QUIT GAME"
+
+[connection signal="pressed" from="Control/Panel/MarginContainer/VBoxContainer/VBoxButtons/ResumeButton" to="." method="unpause_game"]
+[connection signal="pressed" from="Control/Panel/MarginContainer/VBoxContainer/VBoxButtons/QuitButton" to="." method="_on_quit_button_pressed"]

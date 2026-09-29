@@ -1,4 +1,8 @@
+Label
 VBoxContainer
 Button
+MarginContainer
+Panel
+Control
+CanvasLayer
 TextureRect
-Label
