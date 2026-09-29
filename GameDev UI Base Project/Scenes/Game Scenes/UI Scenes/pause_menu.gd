@@ -3,6 +3,7 @@ extends CanvasLayer
 
 func _ready() -> void:
 	visible = false
+	%ResumeButton.grab_focus()
 
 
 func _input(event: InputEvent) -> void:

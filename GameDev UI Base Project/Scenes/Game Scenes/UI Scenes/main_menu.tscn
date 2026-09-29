@@ -5,6 +5,7 @@
 [ext_resource type="StyleBox" uid="uid://ct01x6yvlhye3" path="res://StyleBoxes/blue_button_normal.tres" id="3_jpk73"]
 [ext_resource type="StyleBox" uid="uid://b0lllh7bgrvaj" path="res://StyleBoxes/blue_button_pressed.tres" id="4_54ksr"]
 [ext_resource type="StyleBox" uid="uid://cn5b7etbgg88d" path="res://StyleBoxes/blue_button_hover.tres" id="5_3m6mk"]
+[ext_resource type="StyleBox" uid="uid://cqqgijnpoch2o" path="res://StyleBoxes/blue_button_focus.tres" id="6_54ksr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_biyew"]
 font_size = 64
@@ -61,12 +62,14 @@ theme_override_constants/separation = 15
 alignment = 1
 
 [node name="StartGameButton" type="Button" parent="VBoxContainer" unique_id=555335236]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 36
 theme_override_styles/normal = ExtResource("3_jpk73")
 theme_override_styles/pressed = ExtResource("4_54ksr")
 theme_override_styles/hover = ExtResource("5_3m6mk")
+theme_override_styles/focus = ExtResource("6_54ksr")
 text = "START GAME"
 
 [node name="QuitGameButton" type="Button" parent="VBoxContainer" unique_id=1171092982]
@@ -76,6 +79,7 @@ theme_override_font_sizes/font_size = 36
 theme_override_styles/normal = ExtResource("3_jpk73")
 theme_override_styles/pressed = ExtResource("4_54ksr")
 theme_override_styles/hover = ExtResource("5_3m6mk")
+theme_override_styles/focus = ExtResource("6_54ksr")
 text = "QUIT GAME"
 
 [connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
