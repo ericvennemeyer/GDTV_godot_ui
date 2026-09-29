@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dohd0kdg4t8pw"]
 
 [ext_resource type="Script" uid="uid://bu6gsuneykydh" path="res://Scenes/Game Scenes/UI Scenes/main_menu.gd" id="1_d5wsu"]
+[ext_resource type="Texture2D" uid="uid://ben3nfjr0rvp5" path="res://Assets/UI Art/MainMenuBackground.png" id="2_olann"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_biyew"]
 font_size = 64
@@ -15,6 +16,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_d5wsu")
+
+[node name="BackgroundTextureRect" type="TextureRect" parent="." unique_id=802713627]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_olann")
+expand_mode = 1
+stretch_mode = 6
 
 [node name="TitleLabel" type="Label" parent="." unique_id=894775589]
 layout_mode = 1
