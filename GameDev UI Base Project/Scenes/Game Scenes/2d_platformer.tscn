@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dpak1cwvqfrqs" path="res://Assets/Game Art/background_color_trees.svg" id="2_uwpwp"]
 [ext_resource type="PackedScene" uid="uid://dlg0gro1of0ht" path="res://Scenes/Game Scenes/Premade Scenes/2d_platformer_coin.tscn" id="4_rb1w1"]
 [ext_resource type="PackedScene" uid="uid://c66yv0uum4sw5" path="res://Scenes/Game Scenes/UI Scenes/pause_menu.tscn" id="6_cd0lt"]
+[ext_resource type="PackedScene" uid="uid://diervuosq2jhf" path="res://Scenes/Game Scenes/Premade Scenes/2d_platformer_sign.tscn" id="7_7s3nb"]
 [ext_resource type="PackedScene" uid="uid://csgabv8fdusiy" path="res://Scenes/Game Scenes/Premade Scenes/2d_platformer_player.tscn" id="7_rb1w1"]
 
 [sub_resource type="Gradient" id="Gradient_t50dg"]
@@ -140,6 +141,19 @@ position = Vector2(0, 953)
 scale = Vector2(1024, 1024)
 texture = SubResource("GradientTexture1D_qc1kn")
 
+[node name="Sign" parent="." unique_id=1676996122 instance=ExtResource("7_7s3nb")]
+position = Vector2(256, 0)
+
+[node name="Panel" parent="Sign" index="2" unique_id=1948552703]
+offset_top = -256.0
+offset_bottom = -112.0
+
+[node name="TitleLabel" parent="Sign/Panel/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1676996122, 2008741356) index="0" unique_id=1735043591]
+text = "TUTORIAL TEXT"
+
+[node name="BodyLabel" parent="Sign/Panel/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1676996122, 2008741356) index="1" unique_id=1481590912]
+text = "You can JUMP by pressing SPACEBAR!"
+
 [node name="Coins" type="Node2D" parent="." unique_id=535448822]
 
 [node name="Coin" parent="Coins" unique_id=194657789 instance=ExtResource("4_rb1w1")]
@@ -190,3 +204,5 @@ tile_set = SubResource("TileSet_726jf")
 position = Vector2(0, -79)
 
 [node name="PauseMenu" parent="." unique_id=1425799815 instance=ExtResource("6_cd0lt")]
+
+[editable path="Sign"]

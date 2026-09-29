@@ -6,3 +6,5 @@ res://Scenes/Game Scenes/2d_platformer.tscn
 res://Scenes/Game Scenes/UI Scenes/difficulty_select.gd
 res://Scenes/Game Scenes/UI Scenes/blue_button_focus.tres
 res://Scenes/Game Scenes/UI Scenes/main_menu.gd
+res://Scenes/Game Scenes/Premade Scenes/2d_platformer_sign.tscn
+res://Scenes/Game Scenes/Premade Scripts/2d_platformer_sign.gd
