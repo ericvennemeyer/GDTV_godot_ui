@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c5r0ma18jpedc" path="res://Scenes/Game Scenes/UI Scenes/pause_menu.gd" id="1_hmyja"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_hmyja"]
-font_size = 36
+font_size = 44
 font_color = Color(1, 0.15595528, 0.59499615, 1)
 outline_size = 4
 outline_color = Color(0, 0.75519234, 0.7084885, 1)
@@ -73,11 +73,13 @@ theme_override_constants/separation = 10
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
 text = "RESUME GAME"
 
 [node name="QuitButton" type="Button" parent="Control/Panel/MarginContainer/VBoxContainer/VBoxButtons" unique_id=330756891]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
 text = "QUIT GAME"
 
 [connection signal="pressed" from="Control/Panel/MarginContainer/VBoxContainer/VBoxButtons/ResumeButton" to="." method="unpause_game"]

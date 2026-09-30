@@ -7,6 +7,9 @@
 atlas = ExtResource("1_dxiyu")
 region = Rect2(12, 141, 39, 42)
 
+[sub_resource type="FontVariation" id="FontVariation_lgsb0"]
+spacing_glyph = 1
+
 [sub_resource type="LabelSettings" id="LabelSettings_biyew"]
 font_size = 38
 outline_size = 12
@@ -41,6 +44,7 @@ stretch_mode = 2
 [node name="CoinCounterLabel" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer" unique_id=1058810763]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_lgsb0")
 text = "0"
 label_settings = SubResource("LabelSettings_biyew")
 horizontal_alignment = 1

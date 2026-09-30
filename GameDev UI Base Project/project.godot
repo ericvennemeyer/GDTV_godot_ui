@@ -34,6 +34,10 @@ folder_colors={
 
 player=""
 
+[gui]
+
+theme/custom_font="uid://3smwxrh25xh7"
+
 [input]
 
 pause={

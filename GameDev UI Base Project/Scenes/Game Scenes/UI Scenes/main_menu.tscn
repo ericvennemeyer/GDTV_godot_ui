@@ -8,7 +8,7 @@
 [ext_resource type="StyleBox" uid="uid://cqqgijnpoch2o" path="res://StyleBoxes/blue_button_focus.tres" id="6_54ksr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_biyew"]
-font_size = 64
+font_size = 80
 outline_size = 10
 outline_color = Color(0, 0, 0, 1)
 
@@ -37,10 +37,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -320.5
-offset_top = 64.0
-offset_right = 320.5
-offset_bottom = 152.0
+offset_left = -385.5
+offset_top = 103.0
+offset_right = 385.5
+offset_bottom = 193.0
 grow_horizontal = 2
 text = "Awesome Adventure"
 label_settings = SubResource("LabelSettings_biyew")
