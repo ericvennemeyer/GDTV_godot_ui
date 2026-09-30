@@ -3,3 +3,6 @@ res://Scenes/Game Scenes/UI Scenes/difficulty_select.tscn
 res://Scenes/Game Scenes/UI Scenes/pause_menu.tscn
 res://Scenes/Game Scenes/Premade Scenes/2d_platformer_sign.tscn
 res://Scenes/Game Scenes/UI Scenes/player_hud.tscn
+res://Scenes/Game Scenes/2d_platformer.tscn
+res://Scenes/Game Scenes/UI Scenes/pause_menu.gd
+res://Scenes/Game Scenes/UI Scenes/player_hud.gd

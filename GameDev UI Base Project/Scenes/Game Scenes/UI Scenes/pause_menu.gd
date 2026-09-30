@@ -17,6 +17,7 @@ func _input(event: InputEvent) -> void:
 func pause_game() -> void:
 	visible = true
 	get_tree().paused = true
+	%ResumeButton.grab_focus()
 
 
 func unpause_game() -> void:

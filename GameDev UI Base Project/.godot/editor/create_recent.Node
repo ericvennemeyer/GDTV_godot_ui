@@ -1,3 +1,5 @@
+ProgressBar
+Control
 MarginContainer
 PanelContainer
 Label
@@ -8,4 +10,3 @@ RichTextLabel
 VBoxContainer
 Panel
 Button
-Control
