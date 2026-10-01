@@ -133,12 +133,14 @@ text = "10
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "11
+theme_type_variation = &"GoldButton"
+text = "B1
 "
 
 [node name="Button12" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1749146500]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "12
+theme_type_variation = &"GoldButton"
+text = "B2
 "

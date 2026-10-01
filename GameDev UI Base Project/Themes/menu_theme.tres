@@ -5,6 +5,65 @@
 [ext_resource type="StyleBox" uid="uid://ct01x6yvlhye3" path="res://StyleBoxes/blue_button_normal.tres" id="3_i0hl7"]
 [ext_resource type="StyleBox" uid="uid://b0lllh7bgrvaj" path="res://StyleBoxes/blue_button_pressed.tres" id="4_gj4qq"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o2k2x"]
+bg_color = Color(0, 0.54509807, 0.78039217, 0)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.78039217, 0.40784314, 0, 1)
+corner_radius_top_left = 45
+corner_radius_bottom_right = 45
+corner_detail = 16
+shadow_color = Color(0.33, 0.2585, 0, 0)
+shadow_size = 5
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xy2mv"]
+bg_color = Color(0.9988547, 0.7514023, 3.85046e-07, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.78039217, 0.40784314, 0, 1)
+border_blend = true
+corner_radius_top_left = 45
+corner_radius_bottom_right = 45
+corner_detail = 16
+shadow_color = Color(0.33333334, 0.25882354, 0, 0.7764706)
+shadow_size = 5
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i0hl7"]
+bg_color = Color(0.9764706, 0.6901961, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.78039217, 0.40784314, 0, 1)
+border_blend = true
+corner_radius_top_left = 45
+corner_radius_bottom_right = 45
+corner_detail = 16
+shadow_color = Color(0, 0, 0, 0.7764706)
+shadow_size = 5
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gj4qq"]
+bg_color = Color(0.8167273, 0.57478833, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.78039217, 0.40784314, 0, 1)
+border_blend = true
+corner_radius_top_left = 45
+corner_radius_bottom_right = 45
+corner_detail = 16
+shadow_color = Color(0.33333334, 0.25882354, 0, 0.7764706)
+shadow_size = 5
+shadow_offset = Vector2(3, 3)
+
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o2k2x"]
 load_path = "res://.godot/imported/panel_grey_bolts_detail_b.svg-d474182c4f0cc08afb52ca6888847855.ctex"
 
@@ -31,6 +90,11 @@ Button/styles/focus = ExtResource("1_o2k2x")
 Button/styles/hover = ExtResource("2_xy2mv")
 Button/styles/normal = ExtResource("3_i0hl7")
 Button/styles/pressed = ExtResource("4_gj4qq")
+GoldButton/base_type = &"Button"
+GoldButton/styles/focus = SubResource("StyleBoxFlat_o2k2x")
+GoldButton/styles/hover = SubResource("StyleBoxFlat_xy2mv")
+GoldButton/styles/normal = SubResource("StyleBoxFlat_i0hl7")
+GoldButton/styles/pressed = SubResource("StyleBoxFlat_gj4qq")
 Label/colors/font_outline_color = Color(0.15176272, 0.15730375, 0.52483636, 1)
 Label/constants/outline_size = 12
 Label/font_sizes/font_size = 48
