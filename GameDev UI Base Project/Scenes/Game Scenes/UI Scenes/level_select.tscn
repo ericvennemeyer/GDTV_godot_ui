@@ -1,5 +1,14 @@
 [gd_scene format=3 uid="uid://chhswgtmuby3g"]
 
+[ext_resource type="Texture2D" uid="uid://c6i6olxw4aa3m" path="res://Assets/UI Art/Panel Textures/panel_grey_bolts_detail_b.svg" id="1_d5764"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cs03d"]
+texture = ExtResource("1_d5764")
+texture_margin_left = 40.0
+texture_margin_top = 30.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
 [node name="LevelSelect" type="Control" unique_id=283764432]
 layout_mode = 3
 anchors_preset = 15
@@ -21,13 +30,10 @@ offset_right = 270.0
 offset_bottom = 204.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_cs03d")
 
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=2113564472]
 layout_mode = 2
-theme_override_constants/margin_left = 15
-theme_override_constants/margin_top = 5
-theme_override_constants/margin_right = 15
-theme_override_constants/margin_bottom = 15
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1400230886]
 layout_mode = 2
