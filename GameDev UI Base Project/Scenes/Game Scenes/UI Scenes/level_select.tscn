@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://chhswgtmuby3g"]
 
 [ext_resource type="Texture2D" uid="uid://c6i6olxw4aa3m" path="res://Assets/UI Art/Panel Textures/panel_grey_bolts_detail_b.svg" id="1_d5764"]
+[ext_resource type="Theme" uid="uid://dwfcqpp6lcp7r" path="res://Themes/menu_theme.tres" id="1_uedes"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cs03d"]
 texture = ExtResource("1_d5764")
@@ -16,6 +17,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_uedes")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=527292206]
 layout_mode = 1
@@ -46,7 +48,6 @@ size_flags_stretch_ratio = 0.25
 
 [node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/CenterContainer" unique_id=14432009]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
 text = "SELECT A LEVEL!"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -62,7 +63,6 @@ columns = 4
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "1
 "
 
@@ -70,7 +70,6 @@ text = "1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "2
 "
 
@@ -78,7 +77,6 @@ text = "2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "3
 "
 
@@ -86,7 +84,6 @@ text = "3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "4
 "
 
@@ -94,7 +91,6 @@ text = "4
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "5
 "
 
@@ -102,7 +98,6 @@ text = "5
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "6
 "
 
@@ -110,7 +105,6 @@ text = "6
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "7
 "
 
@@ -118,7 +112,6 @@ text = "7
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "8
 "
 
@@ -126,7 +119,6 @@ text = "8
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "9
 "
 
@@ -134,7 +126,6 @@ text = "9
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "10
 "
 
@@ -142,7 +133,6 @@ text = "10
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "11
 "
 
@@ -150,6 +140,5 @@ text = "11
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
 text = "12
 "

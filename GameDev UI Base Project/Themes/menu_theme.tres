@@ -1,0 +1,38 @@
+[gd_resource type="Theme" format=3 uid="uid://dwfcqpp6lcp7r"]
+
+[ext_resource type="StyleBox" uid="uid://cqqgijnpoch2o" path="res://StyleBoxes/blue_button_focus.tres" id="1_o2k2x"]
+[ext_resource type="StyleBox" uid="uid://cn5b7etbgg88d" path="res://StyleBoxes/blue_button_hover.tres" id="2_xy2mv"]
+[ext_resource type="StyleBox" uid="uid://ct01x6yvlhye3" path="res://StyleBoxes/blue_button_normal.tres" id="3_i0hl7"]
+[ext_resource type="StyleBox" uid="uid://b0lllh7bgrvaj" path="res://StyleBoxes/blue_button_pressed.tres" id="4_gj4qq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o2k2x"]
+load_path = "res://.godot/imported/panel_grey_bolts_detail_b.svg-d474182c4f0cc08afb52ca6888847855.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xy2mv"]
+texture = SubResource("CompressedTexture2D_o2k2x")
+texture_margin_left = 40.0
+texture_margin_top = 30.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d5764"]
+load_path = "res://.godot/imported/panel_grey_bolts_detail_b.svg-d474182c4f0cc08afb52ca6888847855.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uedes"]
+texture = SubResource("CompressedTexture2D_d5764")
+texture_margin_left = 40.0
+texture_margin_top = 30.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[resource]
+Button/font_sizes/font_size = 36
+Button/styles/focus = ExtResource("1_o2k2x")
+Button/styles/hover = ExtResource("2_xy2mv")
+Button/styles/normal = ExtResource("3_i0hl7")
+Button/styles/pressed = ExtResource("4_gj4qq")
+Label/colors/font_outline_color = Color(0.15176272, 0.15730375, 0.52483636, 1)
+Label/constants/outline_size = 12
+Label/font_sizes/font_size = 48
+Panel/styles/panel = SubResource("StyleBoxTexture_xy2mv")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_uedes")

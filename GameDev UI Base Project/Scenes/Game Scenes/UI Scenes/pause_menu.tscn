@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c66yv0uum4sw5"]
 
 [ext_resource type="Script" uid="uid://c5r0ma18jpedc" path="res://Scenes/Game Scenes/UI Scenes/pause_menu.gd" id="1_hmyja"]
+[ext_resource type="Theme" uid="uid://dwfcqpp6lcp7r" path="res://Themes/menu_theme.tres" id="2_iqayi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_hmyja"]
 font_size = 44
@@ -21,6 +22,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_iqayi")
 
 [node name="Panel" type="Panel" parent="Control" unique_id=1180160917]
 layout_mode = 1
@@ -29,10 +31,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -153.0
-offset_top = -50.0
-offset_right = 153.0
-offset_bottom = 185.0
+offset_left = -186.0
+offset_top = -147.0
+offset_right = 186.0
+offset_bottom = 147.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -43,10 +45,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
+theme_override_constants/margin_left = 35
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 35
+theme_override_constants/margin_bottom = 35
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel/MarginContainer" unique_id=2087620191]
 layout_mode = 2
@@ -73,13 +75,13 @@ theme_override_constants/separation = 10
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 32
 text = "RESUME GAME"
 
 [node name="QuitButton" type="Button" parent="Control/Panel/MarginContainer/VBoxContainer/VBoxButtons" unique_id=330756891]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 32
 text = "QUIT GAME"
 
 [connection signal="pressed" from="Control/Panel/MarginContainer/VBoxContainer/VBoxButtons/ResumeButton" to="." method="unpause_game"]

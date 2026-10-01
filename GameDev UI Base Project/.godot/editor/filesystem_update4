@@ -7,3 +7,4 @@ res://Scenes/Game Scenes/2d_platformer.tscn
 res://Scenes/Game Scenes/UI Scenes/pause_menu.gd
 res://Scenes/Game Scenes/UI Scenes/player_hud.gd
 res://Scenes/Game Scenes/UI Scenes/level_select.tscn
+res://Themes/menu_theme.tres
