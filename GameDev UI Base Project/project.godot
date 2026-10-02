@@ -37,6 +37,7 @@ player=""
 
 [gui]
 
+common/snap_controls_to_pixels=false
 theme/custom_font="uid://3smwxrh25xh7"
 
 [input]
