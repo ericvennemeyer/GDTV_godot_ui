@@ -1,2 +1,3 @@
 res://Scenes/Game Scenes/UI Scenes/level_select.tscn
 res://Themes/menu_theme.tres
+res://Scenes/Game Scenes/UI Scenes/button_expand_animation.gd
