@@ -1,3 +1,5 @@
-res://Scenes/Game Scenes/UI Scenes/level_select.tscn
+res://Scenes/Game Scenes/UI Scenes/pause_menu.tscn
 res://Themes/menu_theme.tres
-res://Scenes/Game Scenes/UI Scenes/button_expand_animation.gd
+res://Scenes/Game Scenes/UI Scenes/pause_menu.gd
+res://Scenes/Game Scenes/Premade Scenes/2d_platformer_sign.tscn
+res://Scenes/Game Scenes/Premade Scripts/2d_platformer_sign.gd
